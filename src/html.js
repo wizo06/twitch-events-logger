@@ -1,0 +1,33 @@
+exports.form = `
+- channel.update
+- channel.follow
+channel:read:subscriptions channel.subscribe
+channel:read:subscriptions channel.subscription.end
+channel:read:subscriptions channel.subscription.gift
+channel:read:subscriptions channel.subscription.message
+bits:read channel.cheer
+channel:moderate channel.ban
+channel:moderate channel.unban
+channel:moderate channel.moderator.add
+channel:moderate channel.moderator.remove
+channel:read:redemptions channel.channel_points_custom_reward.add
+channel:read:redemptions channel.channel_points_custom_reward.update
+channel:read:redemptions channel.channel_points_custom_reward.remove
+channel:read:redemptions channel.channel_points_custom_reward_redemption.add
+channel:read:redemptions channel.channel_points_custom_reward_redemption.update
+channel:read:polls channel.poll.begin
+channel:read:polls channel.poll.progress
+channel:read:polls channel.poll.end
+channel:read:predictions channel.prediction.begin
+channel:read:predictions channel.prediction.progress
+channel:read:predictions channel.prediction.lock
+channel:read:predictions channel.prediction.end
+channel:read:hype_train channel.hype_train.begin
+channel:read:hype_train channel.hype_train.progress
+channel:read:hype_train channel.hype_train.end
+channel:read:goals channel.goal.begin
+channel:read:goals channel.goal.progress
+channel:read:goals channel.goal.end
+- stream.online
+- stream.offline
+`
