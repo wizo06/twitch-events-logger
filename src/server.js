@@ -10,4 +10,3 @@ app.get("/", (req, res) => {
 })
 
 app.listen(50057, () => logger.success(`Express server listening on port 50057`));
-
