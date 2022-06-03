@@ -10,8 +10,8 @@ const formatTimestamp = (x) => {
   const month = d.getMonth() + 1 < 10 ? `0${d.getMonth() + 1}` : d.getMonth() + 1;
   const date = d.getDate() < 10 ? `0${d.getDate()}` : d.getDate();
   const hour = d.getHours() < 10 ? `0${d.getHours()}` : d.getHours();
-  const min = d.getMinutes < 10 ? `0${d.getMinutes()}` : d.getMinutes();
-  const sec = d.getSeconds < 10 ? `0${d.getSeconds()}` : d.getSeconds();
+  const min = d.getMinutes() < 10 ? `0${d.getMinutes()}` : d.getMinutes();
+  const sec = d.getSeconds() < 10 ? `0${d.getSeconds()}` : d.getSeconds();
   const timestamp = `${d.getFullYear()}.${month}.${date}|${hour}:${min}:${sec}`;
 
   return timestamp;
